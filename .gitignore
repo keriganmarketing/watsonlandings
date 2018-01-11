@@ -1,0 +1,9 @@
+.idea/
+.DS_Store
+wp-config.php
+tags
+.user.ini
+.vscode/
+php.ini
+*error_log
+*/cache/
