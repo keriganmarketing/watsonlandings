@@ -158,3 +158,22 @@ h3#comments{ color: #20719e; }
 @media (min-width:768px){
     .navbar-custom .navbar-brand {padding-top: 21px;padding-bottom: 10px;}
 }
+
+.frontpage-banner.frontpage-banner-parallax-bg {
+    padding-top: 500px;
+}
+
+#welcome {
+    background-color: #222222;
+    color:white;
+}
+
+#welcome .block-title {
+    color:white;
+}
+
+@media (min-width:768px){
+    .jumbotron {
+        padding:80px 0px 80px 0px;
+    }
+}
