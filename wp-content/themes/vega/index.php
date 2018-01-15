@@ -7,6 +7,7 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part('parts/banner'); ?>
+<h1>TEST</h1>
 
     <!-- ========== Content Starts ========== -->
     <div class="section blog-feed bg-white">

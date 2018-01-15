@@ -1,0 +1,8 @@
+{
+    "name": "dylan/vega-child",
+    "type": "project",
+    "require": {
+        "kerigansolutions/facebookfeed": "^0.16.0"
+    },
+    "minimum-stability": "stable"
+}
