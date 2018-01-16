@@ -36,6 +36,8 @@ foreach($arr as $k=>$v){
     if($v == 'open1')   {   get_template_part('parts/frontpage', 'open1'); }
 }
 
+    get_template_part('template-parts/sections/footer-contact');
+
 ?>
 
 <?php } else { ?>
