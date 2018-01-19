@@ -34,6 +34,7 @@ $classes = explode('|', $class);
         </div>
 
     </div>
+    <p class="text-center"><a class="btn btn-primary-custom btn-margin-bottom" href="/our-work/">View Our Work</a></p>
 </div>
 <!-- ========== /Latest Posts ========== -->
 <?php } ?>

@@ -11,4 +11,20 @@ Tags: one-column,two-columns,right-sidebar,grid-layout,flexible-header,custom-he
 Version: 2.3.4.1515791486
 */
 
+#menu-top-right-menu.top-menu > li {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
 
+.image-banner.frontpage-banner.frontpage-banner-parallax-bg {
+    width: 100%;
+}
+
+.frontpage-banner.frontpage-banner-parallax-bg::before {
+    background-color: transparent !important;
+}
+
+.frontpage-content a {
+    margin: 20px .75rem;
+}

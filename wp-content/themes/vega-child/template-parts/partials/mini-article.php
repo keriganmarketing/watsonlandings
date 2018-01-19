@@ -63,7 +63,7 @@ global $key;
         <!-- Post Buttons -->
         <div class="recent-entry-buttons">
             <?php $readmore = esc_html(vega_wp_get_option('vega_wp_blog_feed_readmore_text')) ?>
-            <?php if($readmore != '') { ?><a href="<?php the_permalink(); ?>" class="btn btn-primary-custom btn-readmore"><?php echo $readmore; ?></a><?php } ?>
+            <?php if($readmore != '') { ?><a href="<?php the_permalink(); ?>" class="btn btn-default btn-readmore"><?php echo $readmore; ?></a><?php } ?>
             <?php if ( ! post_password_required() && comments_open() || '0' != get_comments_number() )  { ?>
                 <?php
                 $nocomments = esc_html(vega_wp_get_option('vega_wp_blog_feed_nocomments_text'));
