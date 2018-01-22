@@ -11,6 +11,10 @@ Tags: one-column,two-columns,right-sidebar,grid-layout,flexible-header,custom-he
 Version: 2.3.4.1515791486
 */
 
+body {
+    font-size: 16px;
+}
+
 #menu-top-right-menu.top-menu > li {
     float: right;
     padding: 0;
@@ -27,4 +31,13 @@ Version: 2.3.4.1515791486
 
 .frontpage-content a {
     margin: 20px .75rem;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    font-size: 15px;
+}
+
+.frontpage-cta.parallax-bg::before {
+    background-color: #000;
+    opacity: 0.6;
 }

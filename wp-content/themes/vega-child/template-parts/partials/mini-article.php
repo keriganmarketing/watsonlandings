@@ -18,13 +18,13 @@ global $key;
 <div class="post-grid recent-entry" id="recent-post-<?php the_ID(); ?>">
     <div class="recent-entry-image image">
         <?php if($result->type != 'video') { ?>
-        <div class="embed-responsive embed-responsive-16by9 align-items-center">
+        <div class="embed-responsive embed-responsive-4by3 align-items-center">
             <a target="_blank" href="<?php echo $result->permalink_url; ?>" target="_blank">
                 <img src="<?php echo $photoUrl; ?>" alt="<?php echo $result->caption; ?>" class="embed-responsive-item" >
             </a>
         </div>
         <?php } else { ?>
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="embed-responsive embed-responsive-4by3">
             <iframe
                     src="<?php echo $result->link ?>"
                     style="border:none;overflow:hidden"
