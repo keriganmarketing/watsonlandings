@@ -39,6 +39,14 @@ add_shortcode('contact_section', function(){
 	get_template_part('template-parts/sections/footer-contact');
 });
 
+add_shortcode('work_gallery', function(){
+	if(isset($_GET['albumName']) && $_GET['albumName'] !=''){
+		get_template_part('template-parts/sections/work-album');
+	}else{
+		get_template_part('template-parts/sections/work-gallery');
+	}
+});
+
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
