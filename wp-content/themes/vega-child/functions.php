@@ -35,6 +35,10 @@ add_shortcode('random_testimonial',function(){
 	return $output;
 });
 
+add_shortcode('contact_section', function(){
+	get_template_part('template-parts/sections/footer-contact');
+});
+
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
