@@ -12,7 +12,7 @@ $gallery = new FacebookPhotoGallery();
 $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 ?>
 <a href="/our-work/" class="btn btn-primary pagination-link">View All Albums</a>
-<div class="row photo-gallery">
+<div class="row photo-gallery grid">
 	<?php
 	$i = 0;
 	foreach ($photos->data as $photo) {
@@ -23,7 +23,7 @@ $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 			$thumbnail = $photo->images[4]->source;
 		}
 		?>
-		<div class="col-md-3 mb-3">
+		<div class="grid-item col-sm-6 col-md-3 mb-3">
 			<figure class="image is-4by3">
 				<a>
 					<img src="<?= $thumbnail ?>" alt="<?= $photo->images[0]->name ?>" class="img img-responsive">

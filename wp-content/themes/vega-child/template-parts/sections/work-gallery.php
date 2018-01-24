@@ -11,10 +11,10 @@ $albums   = $gallery->albums(12, $before, $after);
 
 ?>
 
-<div class="row photo-gallery">
+<div class="row photo-gallery grid">
 	<?php
 	foreach ($albums->data as $album) { ?>
-		<div class="col-md-3">
+		<div class="grid-item col-sm-6 col-md-3 mb-3">
 			<figure class="image is-4by3">
 				<a href="/our-work/?albumName=<?= $album->name ?>&albumId=<?= $album->id ?>">
 					<img src="<?= $album->cover_photo->images[4]->source ?>" alt="<?= $album->name ?>" class="img-responsive">
