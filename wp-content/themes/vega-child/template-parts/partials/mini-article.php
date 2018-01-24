@@ -39,12 +39,7 @@ global $key;
             </iframe>
         </div>
         <?php } ?>
-        <div class="caption">
-            <div class="caption-inner">
-                <a href="<?php the_permalink(); ?>" class="icon-link white"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="helper"></div>
-        </div>
+
     </div>
 
     <div class="recent-entry-content">

@@ -25,7 +25,12 @@ class ComposerStaticInite8819e51d3c464983bcb0c5b32d20d43
         ),
         'K' => 
         array (
+            'KeriganSolutions\\FacebookPhotoGallery\\' => 38,
             'KeriganSolutions\\FacebookFeed\\' => 30,
+        ),
+        'I' => 
+        array (
+            'Includes\\Modules\\' => 17,
         ),
         'G' => 
         array (
@@ -52,9 +57,17 @@ class ComposerStaticInite8819e51d3c464983bcb0c5b32d20d43
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'KeriganSolutions\\FacebookPhotoGallery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kerigansolutions/facebook-photo-gallery/src',
+        ),
         'KeriganSolutions\\FacebookFeed\\' => 
         array (
             0 => __DIR__ . '/..' . '/kerigansolutions/facebookfeed/src',
+        ),
+        'Includes\\Modules\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/inc/modules',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

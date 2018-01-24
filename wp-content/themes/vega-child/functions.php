@@ -2,7 +2,38 @@
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+use Includes\Modules\Helpers\CleanWP;
+use Includes\Modules\Testimonials\Testimonials;
+
 require('vendor/autoload.php');
+
+new CleanWP();
+
+$testimonials = new Testimonials();
+$testimonials->createPostType();
+
+add_shortcode('testimonials',function(){
+	$testimonials = new Testimonials();
+	$allTestimonials = $testimonials->getTestimonials([]);
+	$output = '';
+	foreach($allTestimonials as $testimonial){
+		$output .=	'<div class="testimonial">' .
+						'<p class="text-center review-text">&ldquo;' . $testimonial['content'] . '&rdquo;</p>' .
+						'<p class="text-center review-author">&mdash;' . $testimonial['author'] . ($testimonial['company'] != '' ? ', ' . $testimonial['company'] : '') . '</p>' .
+					'</div>';
+	}
+	return $output;
+});
+
+add_shortcode('random_testimonial',function(){
+	$testimonials = new Testimonials();
+	$testimonial = $testimonials->getRandomTestimonial();
+	$output = '<div class="testimonial random">' .
+		'<p class="text-center review-text">&ldquo;' . $testimonial['content'] . '&rdquo;</p>' .
+		'<p class="text-center review-author">&mdash;' . $testimonial['author'] . ($testimonial['company'] != '' ? ', ' . $testimonial['company'] : '') . '</p>' .
+		'</div>';
+	return $output;
+});
 
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:

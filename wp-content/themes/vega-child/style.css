@@ -41,3 +41,13 @@ body {
     background-color: #000;
     opacity: 0.6;
 }
+
+.testimonial {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.testimonial.random {
+    border: none;
+}
