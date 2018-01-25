@@ -11,7 +11,8 @@ $albumId = $_GET['albumId'] ?? null;
 $gallery = new FacebookPhotoGallery();
 $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 ?>
-<a href="/our-work/" class="btn btn-primary pagination-link">View All Albums</a>
+<h2><?php echo $_GET['albumName']; ?> <a href="/our-work/" class="btn btn-default btn-sm pagination-link">Back to main gallery</a></h2>
+
 <div class="row photo-gallery grid">
 	<?php
 	$i = 0;
@@ -25,7 +26,7 @@ $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 		?>
 		<div class="grid-item col-sm-6 col-md-3 mb-3">
 			<figure class="image is-4by3">
-				<a>
+				<a href="<?= $thumbnail ?>" data-lightbox="<?php echo $albumId; ?>" data-title="<?= $photo->images[0]->name ?>">
 					<img src="<?= $thumbnail ?>" alt="<?= $photo->images[0]->name ?>" class="img img-responsive">
 				</a>
 			</figure>
@@ -36,3 +37,4 @@ $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 	}
 	?>
 </div>
+<script src="/wp-content/themes/vega-child/lightbox.js"></script>
