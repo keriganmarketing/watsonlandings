@@ -9,7 +9,7 @@ $after   = $_GET['after'] ?? null;
 $albumId = $_GET['albumId'] ?? null;
 
 $gallery = new FacebookPhotoGallery();
-$photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
+$photos  = $gallery->albumPhotos($albumId, 36, $before, $after);
 ?>
 <h2><?php echo $_GET['albumName']; ?> <a href="/our-work/" class="btn btn-default btn-sm pagination-link">Back to main gallery</a></h2>
 
@@ -26,7 +26,7 @@ $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 		?>
 		<div class="grid-item col-sm-6 col-md-3 mb-3">
 			<figure class="image is-4by3">
-				<a href="<?= $thumbnail ?>" data-lightbox="<?php echo $albumId; ?>" data-title="<?= $photo->images[0]->name ?>">
+				<a href="<?= $photo->images[0]->source; ?>" data-lightbox="<?php echo $albumId; ?>" data-title="<?= $photo->images[0]->name ?>">
 					<img src="<?= $thumbnail ?>" alt="<?= $photo->images[0]->name ?>" class="img img-responsive">
 				</a>
 			</figure>
@@ -37,4 +37,18 @@ $photos  = $gallery->albumPhotos($albumId, 16, $before, $after);
 	}
 	?>
 </div>
+<?php
+$disabledPrevious = isset($photos->paging->previous) ? false: true;
+$disabledNext     = isset($photos->paging->next) ? false: true;
+$albumName        = $_GET['albumName'];
+?>
+<ul class="pagination text-center" role="navigation" aria-label="pagination">
+    <li <?= ($disabledPrevious != false ? 'disabled"' : '' ) ?>><a class="pagination-previous"
+		<?= ($disabledPrevious == false ? 'href="/our-work/?albumId='. $albumId . '&albumName='. $albumName .  '&before=' . $photos->paging->cursors->before . '"' : ' disabled' ) ?>
+    > Previous </a></li>
+
+    <li <?= ($disabledNext != false ? 'class="disabled"' : '' ) ?>><a class="pagination-next"
+		<?= ($disabledNext == false ? 'href="/our-work/?albumId='. $albumId . '&albumName='. $albumName . '&after=' . $photos->paging->cursors->after . '"' : ' disabled' ) ?>
+    > Next </a></li>
+</ul>
 <script src="/wp-content/themes/vega-child/lightbox.js"></script>
