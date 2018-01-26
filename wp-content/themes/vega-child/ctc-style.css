@@ -147,6 +147,7 @@ h3#comments{ color: #20719e; }
     .navbar-custom .nav > li > a:focus, */
     .navbar-custom .nav > .current > a, 
     .navbar-custom .nav > .open > a{ background-color:#20719e; color:#fff; }
+    .nav > li{padding:10px 0px;}
 }
 
 .navbar-brand.image-logo img {height:50px;}
