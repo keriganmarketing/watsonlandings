@@ -36,10 +36,14 @@ $disabledPrevious = isset($albums->paging->previous) ? false : true;
 $disabledNext = isset($albums->paging->next) ? false : true;
 ?>
 <ul class="pagination text-center" role="navigation" aria-label="pagination">
-    <li <?= ($disabledPrevious != false ? 'disabled"' : '' ) ?>><a class="pagination-previous"
+    <?php if($disabledPrevious == false) { ?>
+    <li><a class="pagination-previous"
 		<?= ($disabledPrevious == false ? 'href="/our-work/?before=' . $albums->paging->cursors->before . '"' : ' disabled' ) ?>
         > Previous </a></li>
-    <li <?= ($disabledNext != false ? 'class="disabled"' : '' ) ?>><a class="pagination-next"
+    <?php } ?>
+    <?php if($disabledNext == false) { ?>
+    <li><a class="pagination-next"
 		<?= ($disabledNext == false ? 'href="/our-work/?after=' . $albums->paging->cursors->after . '"' : ' disabled' ) ?>
         > Next </a></li>
+    <?php } ?>
 </ul>

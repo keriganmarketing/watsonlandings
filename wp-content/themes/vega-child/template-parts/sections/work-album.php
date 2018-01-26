@@ -43,12 +43,15 @@ $disabledNext     = isset($photos->paging->next) ? false: true;
 $albumName        = $_GET['albumName'];
 ?>
 <ul class="pagination text-center" role="navigation" aria-label="pagination">
-    <li <?= ($disabledPrevious != false ? 'disabled"' : '' ) ?>><a class="pagination-previous"
+    <?php if($disabledPrevious == false) { ?>
+    <li><a class="pagination-previous"
 		<?= ($disabledPrevious == false ? 'href="/our-work/?albumId='. $albumId . '&albumName='. $albumName .  '&before=' . $photos->paging->cursors->before . '"' : ' disabled' ) ?>
     > Previous </a></li>
-
-    <li <?= ($disabledNext != false ? 'class="disabled"' : '' ) ?>><a class="pagination-next"
+    <?php } ?>
+    <?php if($disabledNext == false) { ?>
+    <li><a class="pagination-next"
 		<?= ($disabledNext == false ? 'href="/our-work/?albumId='. $albumId . '&albumName='. $albumName . '&after=' . $photos->paging->cursors->after . '"' : ' disabled' ) ?>
     > Next </a></li>
+    <?php } ?>
 </ul>
 <script src="/wp-content/themes/vega-child/lightbox.js"></script>
