@@ -181,3 +181,4 @@ h3#comments{ color: #20719e; }
         padding:80px 0px 80px 0px;
     }
 }
+.no-link > a:hover{text-decoration:none !important;color:#fff !important;}
