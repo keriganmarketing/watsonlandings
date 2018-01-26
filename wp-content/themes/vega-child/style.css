@@ -20,7 +20,7 @@ body {
 }
 
 .nf-field-element textarea {
-    height: 236px;
+    height: 236px !important;
 }
 
 #menu-top-right-menu.top-menu > li {
