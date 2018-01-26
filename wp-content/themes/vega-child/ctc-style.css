@@ -155,9 +155,11 @@ h3#comments{ color: #20719e; }
 
 @media (max-width:767px){
     .navbar-custom .navbar-brand {padding-top: 11px;padding-bottom: 10px;}
+    #back_to_top a {right:10px;}
 }
 @media (min-width:768px){
     .navbar-custom .navbar-brand {padding-top: 21px;padding-bottom: 10px;}
+    #back_to_top a {right:-10px;}
 }
 
 .frontpage-banner.frontpage-banner-parallax-bg {
