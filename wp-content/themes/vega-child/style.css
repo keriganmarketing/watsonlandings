@@ -19,6 +19,10 @@ body {
     min-height: 251px;
 }
 
+.nf-field-element textarea {
+    height: 236px;
+}
+
 #menu-top-right-menu.top-menu > li {
     float: right;
     padding: 0;
