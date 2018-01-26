@@ -48,6 +48,22 @@
 
 <?php get_template_part('parts/footer', 'back-to-top'); ?>
 <?php wp_footer(); ?>
+<script>
+    jQuery(document).ready(function($) {
+        var bodyHeight = $('body').height(),
+            windowHeight = $(window).height()+1;
 
+        if ( bodyHeight < windowHeight ) {
+            $('body').addClass("full");
+            $('.footer').addClass("stuck");
+        }else{
+            $('body').removeClass("full");
+            $('.footer').removeClass("stuck");
+        }
+
+        console.log(windowHeight);
+        console.log(bodyHeight);
+    });
+</script>
 </body>
 </html>

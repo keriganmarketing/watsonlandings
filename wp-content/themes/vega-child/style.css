@@ -263,3 +263,15 @@ html.lb-disable-scrolling {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
 }
+
+html {
+    height: 100%;
+}
+body.full {
+    height: 100%;
+}
+.footer.stuck {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
