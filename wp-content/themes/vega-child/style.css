@@ -15,6 +15,10 @@ body {
     font-size: 16px;
 }
 
+.grid-item {
+    min-height: 251px;
+}
+
 #menu-top-right-menu.top-menu > li {
     float: right;
     padding: 0;
@@ -27,6 +31,7 @@ body {
 
 .frontpage-banner.frontpage-banner-parallax-bg::before {
     background-color: transparent !important;
+    bottom: -10px;
 }
 
 .frontpage-content a {
@@ -40,6 +45,7 @@ body {
 .frontpage-cta.parallax-bg::before {
     background-color: #000;
     opacity: 0.6;
+    bottom: -10px;
 }
 
 .testimonial {

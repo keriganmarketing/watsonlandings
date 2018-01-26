@@ -45,17 +45,7 @@ add_shortcode('work_gallery', function(){
 	}else{
 		get_template_part('template-parts/sections/work-gallery');
 	}
-	?>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script>
-        window.onload = function(){
-            var elem = document.querySelector('.grid');
-            var msnry = new Masonry( elem, {
-                itemSelector: '.grid-item',
-            });
-        }
-	</script>
-	<?php
+
 });
 
 // BEGIN ENQUEUE PARENT ACTION
