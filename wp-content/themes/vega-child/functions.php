@@ -48,10 +48,12 @@ add_shortcode('work_gallery', function(){
 	?>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script>
-	    var elem = document.querySelector('.grid');
-	    var msnry = new Masonry( elem, {
-	        itemSelector: '.grid-item',
-	    });
+        window.onload = function(){
+            var elem = document.querySelector('.grid');
+            var msnry = new Masonry( elem, {
+                itemSelector: '.grid-item',
+            });
+        }
 	</script>
 	<?php
 });
