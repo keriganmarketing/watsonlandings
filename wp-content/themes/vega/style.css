@@ -295,7 +295,7 @@ a.navbar-brand.text-logo { text-transform: uppercase; font-weight: 900; font-siz
 @media (min-width:768px){
     .nav-wrapper{height:90px;}
 }
-.navbar-fixed-top .navbar-collapse{ padding-right:15px; padding-left:30px; }
+.navbar-fixed-top .navbar-collapse{ padding-right:15px; padding-left:15px; }
 
 /* fix for smartmenu */
 .navbar-nav > li .scroll-up, .navbar-nav > li .scroll-down{display:none !important}
