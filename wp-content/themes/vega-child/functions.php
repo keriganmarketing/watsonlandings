@@ -36,16 +36,19 @@ add_shortcode('random_testimonial',function(){
 });
 
 add_shortcode('contact_section', function(){
+    ob_start();
 	get_template_part('template-parts/sections/footer-contact');
+    return ob_get_clean();
 });
 
 add_shortcode('work_gallery', function(){
+    ob_start();
 	if(isset($_GET['albumName']) && $_GET['albumName'] !=''){
-		get_template_part('template-parts/sections/work-album');
+        include(locate_template('template-parts/sections/work-album.php'));
 	}else{
-		get_template_part('template-parts/sections/work-gallery');
+        include(locate_template('template-parts/sections/work-gallery.php'));
 	}
-
+    return ob_get_clean();
 });
 
 // BEGIN ENQUEUE PARENT ACTION
