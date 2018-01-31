@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-7">
                 <h3>Service Area</h3>
-                <img src="/wp-content/themes/vega-child/images/areas-we-serve.jpg" class="img-responsive" >
+                <img src="/wp-content/themes/vega-child/images/areas-we-serve-2.png" class="img-responsive" >
             </div>
             <div class="recent-entry col-md-5">
                 <h3>Email</h3>
