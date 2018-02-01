@@ -54,22 +54,10 @@ global $key;
         <!-- /Post Meta -->
     <?php } ?>
 
-    <?php if($vega_wp_blog_feed_buttons == 'Y') { ?>
-        <!-- Post Buttons -->
-        <div class="recent-entry-buttons">
-            <?php $readmore = esc_html(vega_wp_get_option('vega_wp_blog_feed_readmore_text')) ?>
-            <?php if($readmore != '') { ?><a href="<?php the_permalink(); ?>" class="btn btn-default btn-readmore"><?php echo $readmore; ?></a><?php } ?>
-            <?php if ( ! post_password_required() && comments_open() || '0' != get_comments_number() )  { ?>
-                <?php
-                $nocomments = esc_html(vega_wp_get_option('vega_wp_blog_feed_nocomments_text'));
-                $comment = esc_html(vega_wp_get_option('vega_wp_blog_feed_comment_text'));
-                $comments = esc_html(vega_wp_get_option('vega_wp_blog_feed_comments_text'));
-                ?>
-                <?php if($nocomments != '' && $comment != '' && $comments != '')
-                    comments_popup_link( $nocomments, '1 ' . $comment, '% ' . $comments, 'btn btn-inverse btn-comments' ); ?>
-            <?php } ?>
-        </div>
-        <!-- /Post Buttons -->
-    <?php } ?>
+    <!-- Post Buttons -->
+    <div class="recent-entry-buttons">
+        <a target="_blank" href="<?php echo $result->permalink_url; ?>" class="btn btn-default btn-readmore">Read more</a>
+    </div>
+    <!-- /Post Buttons -->
 
 </div>
