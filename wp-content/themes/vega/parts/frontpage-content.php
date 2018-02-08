@@ -1,13 +1,13 @@
 <?php
 /**
- * The template part for displaying the front page content 
+ * The template part for displaying the front page content
  *
  * @package vega
  */
 ?>
 
-<?php 
-$vega_wp_frontpage_content = vega_wp_get_option('vega_wp_frontpage_content'); 
+<?php
+$vega_wp_frontpage_content = vega_wp_get_option('vega_wp_frontpage_content');
 $vega_wp_enable_demo = vega_wp_get_option('vega_wp_enable_demo');
 ?>
 
@@ -17,11 +17,11 @@ $vega_wp_enable_demo = vega_wp_get_option('vega_wp_enable_demo');
 <div class="section frontpage-content bg-white" id="welcome">
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
-        <h2 class="block-title wow zoomIn"><?php the_title(); ?></h2>
+        <h1 class="block-title wow zoomIn"><?php the_title(); ?></h1>
         <div class="wow fadeInUp description"><?php the_content(); ?></div>
         <?php endwhile; ?>
     </div>
-</div> 
+</div>
 <!-- ========== /Page Content ========== -->
 <?php } else if( $vega_wp_enable_demo == 'Y') { ?>
 <!-- ========== Random Page Content ========== -->
@@ -29,6 +29,6 @@ $vega_wp_enable_demo = vega_wp_get_option('vega_wp_enable_demo');
     <div class="container">
         <?php vega_wp_example_frontpage_content(); ?>
     </div>
-</div> 
+</div>
 <!-- ========== /Random Page Content ========== -->
 <?php } ?>
