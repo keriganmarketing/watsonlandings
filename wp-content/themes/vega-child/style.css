@@ -286,3 +286,19 @@ body.full {
     position: absolute;
     bottom: 0;
 }
+
+@media screen and (max-width: 420px){
+    .nav-foot li {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        padding:.5rem;
+    }
+    .mobile-block {
+        display: block;
+        text-align: center;
+    }
+    .mobile-hide {
+        display: none;
+    }
+}
