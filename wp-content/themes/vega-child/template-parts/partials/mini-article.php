@@ -2,7 +2,7 @@
 
 $dateposted = human_time_diff(time(),strtotime($result->created_time)) . ' ago';
 $content  = wp_trim_words($result->message, 17, '... <a href="#" >read more.</a>');
-$photoUrl = $result->full_picture != null ? $result->full_picture : 'http://hindsconstruction.dev/wp-content/uploads/2018/01/gulfaire-home-2.jpg';
+$photoUrl = $result->full_picture != null ? $result->full_picture : 'http://watsonlandings.test/wp-content/uploads/2018/03/cover_image.jpg';
 
 $vega_wp_blog_feed_meta = vega_wp_get_option('vega_wp_blog_feed_meta');
 if($vega_wp_blog_feed_meta == 'Y') {
