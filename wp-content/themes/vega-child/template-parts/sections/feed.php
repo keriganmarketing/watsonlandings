@@ -34,7 +34,7 @@ $classes = explode('|', $class);
         </div>
 
     </div>
-    <p class="text-center"><a class="btn btn-primary-custom btn-margin-bottom" href="/our-work/">View Our Work</a></p>
+    <p class="text-center"><a class="btn btn-primary-custom btn-margin-bottom" href="https://www.facebook.com/Watson-Landings-Marina-1485840388363303/" target="_blank">See More</a></p>
 </div>
 <!-- ========== /Latest Posts ========== -->
 <?php } ?>
