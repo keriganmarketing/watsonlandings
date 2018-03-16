@@ -29,6 +29,17 @@ body {
     margin: 0;
 }
 
+.top-menu>li>a{
+    height:3.5rem;
+    padding:2px;
+    margin:0px 6px;
+    color:#fff;
+    display:block;
+    font-size:12px;
+    text-decoration:none;
+    line-height:29px;}
+
+
 .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
     width: 100%;
 }

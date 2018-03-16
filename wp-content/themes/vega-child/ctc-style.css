@@ -44,19 +44,19 @@ a:focus{ color:#2b89bf;}
 /* Top Navigation
 ------------------------------------------------------------------------*/
 
-.navbar-nav .dropdown-menu{ border-top:2px solid #285da0; }
+.navbar-nav .dropdown-menu{ border-top:2px solid #003e8e; }
 .navbar-custom .dropdown-menu > li > a:hover,
 .navbar-custom .dropdown-menu > li:hover > a,
-.navbar-custom .dropdown-menu > .open > a{ background:transparent; color:#285da0; }
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover { color:#285da0 !important; background-color: transparent; }
+.navbar-custom .dropdown-menu > .open > a{ background:transparent; color:#003e8e; }
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover { color:#003e8e !important; background-color: transparent; }
 .navbar-custom .nav > li > a:hover,
 .navbar-custom .nav > li > a:focus,
 .navbar-custom .nav > .current > a,
 .navbar-custom .nav > .active > a,
 .navbar-custom .nav > .current-menu-ancestor > a,
-.navbar-custom .nav > .open > a{ background-color:transparent; color:#285da0; }
+.navbar-custom .nav > .open > a{ background-color:transparent; color:#003e8e; }
 .navbar-custom .nav > .page-scroll > a:hover,
-.navbar-custom .nav > .page-scroll > a.showing{color:#285da0 !important;}
+.navbar-custom .nav > .page-scroll > a.showing{color:#003e8e !important;}
 
 /* Page Banner
 ------------------------------------------------------------------------*/
@@ -168,12 +168,12 @@ h3#comments{ color: #285da0; }
 }
 
 #welcome {
-    background-color: #222222;
-    color:white;
+    background-color: #eee5c4;
+    color:#222;
 }
 
 #welcome .block-title {
-    color:white;
+    color:#003e8e;
 }
 
 @media (min-width:768px){
