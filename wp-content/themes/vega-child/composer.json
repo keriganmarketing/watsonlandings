@@ -1,0 +1,15 @@
+{
+    "name": "dylan/vega-child",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Includes\\Modules\\": "inc/modules"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "kerigansolutions/facebookfeed": "^0.17.0",
+        "kerigansolutions/facebook-photo-gallery": "^0.6.0"
+    },
+    "minimum-stability": "stable"
+}

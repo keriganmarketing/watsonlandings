@@ -1,0 +1,11 @@
+.idea/
+.DS_Store
+wp-config.php
+tags
+.user.ini
+.vscode/
+*error_log
+*/cache/
+wp-content/plugins/
+wp-content/uploads/
+

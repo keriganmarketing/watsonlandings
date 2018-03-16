@@ -1,0 +1,319 @@
+/*
+CTC Separate Stylesheet
+Updated: 2018-01-12 16:11:26
+Theme Name: Vega Child
+Theme URI: https://kerigan.com
+Template: vega
+Author: Kerigan Marketing
+Author URI: https://kerigan.com
+Description: KMA Vega Child Theme for Hinds
+Tags: one-column,two-columns,right-sidebar,grid-layout,flexible-header,custom-header,custom-colors,custom-menu,featured-image-header,featured-images,footer-widgets,full-width-template,theme-options,translation-ready,blog,news,portfolio
+Version: 2.3.4.1515791486
+*/
+
+body {
+    font-size: 16px;
+}
+
+.grid-item {
+    min-height: 251px;
+}
+
+.nf-field-element textarea {
+    height: 236px !important;
+}
+
+#menu-top-right-menu.top-menu > li {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu>li>a{
+    height:3.5rem;
+    padding:2px;
+    margin:0px 6px;
+    color:#222;
+    display:block;
+    font-size:16px;
+    text-decoration:none;
+    line-height:30px;}
+
+
+.image-banner.frontpage-banner.frontpage-banner-parallax-bg {
+    width: 100%;
+}
+
+.frontpage-banner.frontpage-banner-parallax-bg::before {
+    background-color: transparent !important;
+    bottom: -10px;
+}
+
+.frontpage-content a {
+    width:80%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    font-size: 15px;
+    line-height:20px;
+    color:#fff;
+}
+
+.frontpage-cta.parallax-bg::before {
+    background-color: #000;
+    opacity: 0.6;
+    bottom: -10px;
+}
+
+.testimonial {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.testimonial.random {
+    border: none;
+}
+
+.mb-3 figure {
+    margin: 1.5rem 0 .5rem;
+    border: 1px solid #ddd;
+}
+
+html.lb-disable-scrolling {
+    overflow: hidden;
+    /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+}
+
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+}
+
+.lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+
+    /* Image border */
+    border: 4px solid white;
+}
+
+.lightbox a img {
+    border: none;
+}
+
+.lb-outerContainer {
+    position: relative;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+
+    /* Background color behind image.
+       This is visible during transitions. */
+    background-color: white;
+}
+
+.lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.lb-container > .nav {
+    left: 0;
+}
+
+.lb-nav a {
+    outline: none;
+    background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(images/prev.png) left 48% no-repeat;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(images/next.png) right 48% no-repeat;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    *zoom: 1;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lb-data {
+    padding: 0 4px;
+    color: #ccc;
+}
+
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+    color: #4ae;
+}
+
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999;
+}
+
+.lb-data .lb-close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(images/close.png) top right no-repeat;
+    text-align: right;
+    outline: none;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+html {
+    height: 100%;
+}
+body.full {
+    height: 100%;
+}
+.footer.stuck {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 420px){
+    .nav-foot li {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        padding:.5rem;
+    }
+    .mobile-block {
+        display: block;
+        text-align: center;
+    }
+    .mobile-hide {
+        display: none;
+    }
+}
