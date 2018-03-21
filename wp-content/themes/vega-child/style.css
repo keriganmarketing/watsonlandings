@@ -49,12 +49,6 @@ body {
     bottom: -10px;
 }
 
-.frontpage-content a {
-    width:80%;
-    margin-left: .5rem;
-    margin-right: .5rem;
-}
-
 .navbar-custom .navbar-nav > li > a {
     font-size: 15px;
     line-height:20px;
