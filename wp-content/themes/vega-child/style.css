@@ -311,3 +311,37 @@ body.full {
         display: none;
     }
 }
+
+img.alignright {
+    width: 100% !important;
+    margin: 0;
+    height: auto;
+}
+
+img.alignnone {
+    width: 100% !important;
+    margin: 0;
+    height: auto;
+}
+
+img.alignleft {
+    width: 100% !important;
+    margin: 0;
+    height: auto;
+}
+@media screen and (min-width:768px) {
+    img.alignright {
+        max-width: 50%;
+        height: auto;
+    }
+
+    img.alignnone {
+        max-width: 50%;
+        height: auto;
+    }
+
+    img.alignleft {
+        max-width: 50%;
+        height: auto;
+    }
+}
