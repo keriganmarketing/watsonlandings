@@ -320,28 +320,31 @@ img.alignright {
 
 img.alignnone {
     width: 100% !important;
-    margin: 0;
+    margin: 1rem 0;
     height: auto;
 }
 
 img.alignleft {
     width: 100% !important;
-    margin: 0;
+    margin: 1rem 0;
     height: auto;
 }
 @media screen and (min-width:768px) {
     img.alignright {
         max-width: 50%;
         height: auto;
+        margin: 0 0 .5rem 1rem;
     }
 
     img.alignnone {
         max-width: 50%;
         height: auto;
+        margin: 1rem auto;
     }
 
     img.alignleft {
         max-width: 50%;
         height: auto;
+        margin: 0 1rem .5rem 0;
     }
 }
