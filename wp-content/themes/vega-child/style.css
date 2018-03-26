@@ -314,7 +314,7 @@ body.full {
 
 img.alignright {
     width: 100% !important;
-    margin: 0;
+    margin: 1rem 0;
     height: auto;
     display: block;
 }
