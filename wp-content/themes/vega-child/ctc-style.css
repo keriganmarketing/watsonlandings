@@ -163,7 +163,7 @@ h3#comments{ color: #1452a8; }
 }
 
 .navbar-brand.image-logo img {
-    height:100px;
+    height:150px;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
@@ -193,11 +193,11 @@ h3#comments{ color: #1452a8; }
 
 #welcome {
     background-color: #eee5c4;
-    color:#222;
+    color:#444;
 }
 
 #welcome .block-title {
-    color:#222;
+    color:#444;
 }
 
 @media (min-width:768px){
