@@ -6,4 +6,4 @@ tags
 .vscode/
 *error_log
 */cache/
-wp-content/plugins/
+wp-content/themes/vega-child/vendor/
