@@ -15,7 +15,7 @@ Updated: 2018-01-12 16:11:26
 
 a{ color:#1452a8; }
 a:hover,
-a:focus{ color:#eee5c4;}
+a:focus{ color:#0e3770;}
 
 /* Background Colors for Sections
 ------------------------------------------------------------------------*/
@@ -55,14 +55,14 @@ a:focus{ color:#eee5c4;}
 .navbar {border-radius:0px;background-color: #fff;}
 .navbar-custom .dropdown-menu > li > a:hover,
 .navbar-custom .dropdown-menu > li:hover > a,
-.navbar-custom .dropdown-menu > .open > a{ background:transparent; color:; }
+.navbar-custom .dropdown-menu > .open > a{ background:transparent; color:#0e3770; }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover { color:#eee5c4 !important; background-color: transparent; }
 .navbar-custom .nav > li > a:hover,
 .navbar-custom .nav > li > a:focus,
 .navbar-custom .nav > .current > a,
 .navbar-custom .nav > .active > a,
 .navbar-custom .nav > .current-menu-ancestor > a,
-.navbar-custom .nav > .open > a{ background-color:transparent; color:#eee5c4; }
+.navbar-custom .nav > .open > a{ background-color:transparent; color:#0e3770; }
 .navbar-custom .nav > .page-scroll > a:hover,
 .navbar-custom .nav > .page-scroll > a.showing{color:#eee5c4 !important;}
 
@@ -163,8 +163,8 @@ h3#comments{ color: #1452a8; }
 }
 
 .navbar-brand.image-logo img {
-    height:110px;
-    padding:10px;
+    height:70px;
+    padding:5px;
 }
 .nav-wrapper {height:100%;}
 
