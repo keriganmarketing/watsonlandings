@@ -39,7 +39,7 @@ a:focus{ color:#eee5c4;}
 /* Header Navigation
 ------------------------------------------------------------------------*/
 
-.header{background-color:#fff;}
+.header{background-color:#1452a8;}
 
 .header-toggle {
     background-color: #fff;
@@ -52,7 +52,7 @@ a:focus{ color:#eee5c4;}
 /* Top Navigation
 ------------------------------------------------------------------------*/
 
-.navbar {border-radius:0px;background-color: #1452a8;}
+.navbar {border-radius:0px;background-color: #fff;}
 .navbar-custom .dropdown-menu > li > a:hover,
 .navbar-custom .dropdown-menu > li:hover > a,
 .navbar-custom .dropdown-menu > .open > a{ background:transparent; color:; }
@@ -164,13 +164,7 @@ h3#comments{ color: #1452a8; }
 
 .navbar-brand.image-logo img {
     height:110px;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
-    background-color: #fff;
     padding:10px;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
 }
 .nav-wrapper {height:100%;}
 
