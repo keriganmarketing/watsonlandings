@@ -15,7 +15,7 @@ Updated: 2018-01-12 16:11:26
 
 a{ color:#1452a8; }
 a:hover,
-a:focus{ color:#eee5c4;}
+a:focus{ color:#0e3770;}
 
 /* Background Colors for Sections
 ------------------------------------------------------------------------*/
@@ -39,7 +39,7 @@ a:focus{ color:#eee5c4;}
 /* Header Navigation
 ------------------------------------------------------------------------*/
 
-.header{background-color:#fff;}
+.header{background-color:#1452a8;}
 
 .header-toggle {
     background-color: #fff;
@@ -52,17 +52,17 @@ a:focus{ color:#eee5c4;}
 /* Top Navigation
 ------------------------------------------------------------------------*/
 
-.navbar {border-radius:0px;background-color: #1452a8;}
+.navbar {border-radius:0px;background-color: #fff;}
 .navbar-custom .dropdown-menu > li > a:hover,
 .navbar-custom .dropdown-menu > li:hover > a,
-.navbar-custom .dropdown-menu > .open > a{ background:transparent; color:; }
+.navbar-custom .dropdown-menu > .open > a{ background:transparent; color:#0e3770; }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover { color:#eee5c4 !important; background-color: transparent; }
 .navbar-custom .nav > li > a:hover,
 .navbar-custom .nav > li > a:focus,
 .navbar-custom .nav > .current > a,
 .navbar-custom .nav > .active > a,
 .navbar-custom .nav > .current-menu-ancestor > a,
-.navbar-custom .nav > .open > a{ background-color:transparent; color:#eee5c4; }
+.navbar-custom .nav > .open > a{ background-color:transparent; color:#0e3770; }
 .navbar-custom .nav > .page-scroll > a:hover,
 .navbar-custom .nav > .page-scroll > a.showing{color:#eee5c4 !important;}
 
@@ -163,14 +163,8 @@ h3#comments{ color: #1452a8; }
 }
 
 .navbar-brand.image-logo img {
-    height:150px;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.13);
-    background-color: #fff;
-    padding:10px;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    height:70px;
+    padding:5px;
 }
 .nav-wrapper {height:100%;}
 
