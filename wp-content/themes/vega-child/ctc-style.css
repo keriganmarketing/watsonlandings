@@ -163,13 +163,27 @@ h3#comments{ color: #1452a8; }
 }
 
 .navbar-brand.image-logo img {
-    height:70px;
-    padding:5px;
+    max-height:70px;
+    padding:5px 0;
 }
 .nav-wrapper {height:100%;}
 
 .navbar-toggle {
-    color:#fff;
+    margin-right: 0;
+}
+
+@media (max-width:320px){
+    .navbar-brand.image-logo img {
+        padding: 5px 0 0;
+        width: 244px;
+    }
+}
+
+@media (max-width:375px){
+    .navbar-brand.image-logo img {
+        padding: 5px 0 0;
+        width: 294px;
+    }
 }
 
 @media (max-width:767px){
